@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./bookdetailstyle.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../home/home.php" >Home</a>
+      <a href="../bookdetail/bookdetail.html" class="active">Book Details</a>
+        <a href="../bookcatalogue/bookcatelog.html">Book Catelog</a>
+        <a href="../FloorPlanV3/index.php">Floor Plan</a>
+        <a href="../inqueris/new inq 2.html">Inquires</a>
+        <a href="../home/Contactus.html" >Contact Us</a>
+      <a href="../login-reg/backend/logout.php">Logout</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div> -->
+    </div>
+
+    <div id="namebar">
+      <h1>Book Details Form</h1>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="form-wrapper">
+        <form action="" method="POST" id="detailform">
+          <div class="input-group">
+            <label for="name" class="form-label">Book Title </label>
+            <input
+              type="text"
+              name="booktitle"
+              id="booktitle"
+              placeholder="Enter your book title"
+              class="form-input"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="name" class="form-label"> Author </label>
+            <input
+              type="text"
+              name="author"
+              id="author"
+              placeholder="Enter Author name"
+              class="form-input"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="name" class="form-label"> ISBN </label>
+            <input
+              type="text"
+              name="isbn"
+              id="isbn"
+              placeholder="Enter ISBN"
+              class="form-input"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="name" class="form-label"> Publisher </label>
+            <input
+              type="text"
+              name="publisher"
+              id="publisher"
+              placeholder="Enter Publisher"
+              class="form-input"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="name" class="form-label"> Price </label>
+            <input
+              type="number"
+              name="price"
+              id="price"
+              placeholder="Enter Price"
+              class="form-input"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="name" class="form-label"> Published Date </label>
+            <input type="date" name="pubdate" id="pubdate" class="form-input" />
+          </div>
+
+          <div class="input-group">
+            <label for="text" class="form-label"> Book Description</label>
+            <input
+              type="text"
+              name="bookdes"
+              id="bookdes"
+              placeholder="Enter your book description"
+              class="form-input"
+            />
+          </div>
+
+          <div class="input-group">
+            <label class="form-label"> Language </label>
+
+            <select class="form-select" name="language" id="languageSelect">
+              <option value="null" selected disabled>Select language</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label class="form-label"> Category </label>
+
+            <select class="form-select" name="category" id="categorySelect">
+              <option value="null" selected disabled>
+                Select Book Category
+              </option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="form-label">
+              Any comments or suggestions
+            </label>
+            <textarea
+              rows="3"
+              name="message"
+              id="message"
+              placeholder="Type here..."
+              class="form-input"
+            ></textarea>
+          </div>
+
+          <button class="btn" id="btnsubmitt">Submit</button>
+          <button class="btn" id="btnclear" onclick="clearForm()">Clear</button>
+        </form>
+        <br /><br /><br />
+      </div>
+    </div>
+
+    <script src="./bookdetails.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<div class="topnav" id="myTopnav">
+  
+  <a href="../home/home.php" >Home</a>
+  <a href="../bookdetail/bookdetail.html">Book Details</a>
+        <a href="../bookcatalogue/bookcatelog.html">Book Catelog</a>
+        <a href="../FloorPlanV3/index.php" >Floor Plan</a>
+        <a href="#" class="active">Inquires</a>
+        <a href="../home/Contactus.html" >Contact Us</a>
+        
+  <a href="../login-reg/backend/logout.php">Logout</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <!-- <div class="search-container">
+      <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+  </div> -->
+</div>
+
+<div class="formbold-main-wrapper">
+  <div class="formbold-form-wrapper">
+    <div class="formbold-input-flex">
+      <div>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder=""
+          class="formbold-form-input"
+        />
+        <label for="firstname" class="formbold-form-label"> First name </label>
+      </div>
+      <div>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder=""
+          class="formbold-form-input"
+        />
+        <label for="lastname" class="formbold-form-label"> Last name </label>
+      </div>
+    </div>
+
+    <div class="formbold-input-flex">
+      <div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder=""
+          class="formbold-form-input"
+        />
+        <label for="email" class="formbold-form-label"> Mail </label>
+      </div>
+      <div>
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder=""
+          class="formbold-form-input"
+        />
+        <label for="phone" class="formbold-form-label"> Phone </label>
+      </div>
+    </div>
+
+    <div class="formbold-textarea">
+      <textarea
+        rows="6"
+        name="inquirie"
+        id="inquirie"
+        placeholder="type your inquirie..."
+        class="formbold-form-input"
+      ></textarea>
+      <label for="message" class="formbold-form-label"> inquirie </label>
+    </div>
+
+    <button class="formbold-btn">Send inquirie</button>
+  </div>
+</div>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+
+  .formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 22px;
+  }
+  .formbold-input-flex > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .formbold-textarea {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input::placeholder {
+    color: #536387;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+  }
+  .formbold-form-label {
+    color: #07074d;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 18px;
+  }
+  .formbold-form-input:focus + .formbold-form-label {
+    color: #6a64f1;
+  }
+
+  .formbold-btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 12px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Navigation bar */
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #27bcda;
+    color: white;
+  }
+
+  #namebar {
+    background-color: #07074d;
+    color: rgb(212, 24, 24);
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    padding-top: 60px;
+  }
+</style>

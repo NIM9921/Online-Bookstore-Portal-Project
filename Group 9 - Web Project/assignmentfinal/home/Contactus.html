@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Data Collection Form</title>
+
+  <style>
+    /* Navigation bar */
+
+    body{
+      font-family:  sans-serif;
+      margin-top: 0px!important;
+      padding-top: 0px!important;
+    }
+
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+        z-index: 10000;
+      }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #27bcda;
+        color: white;
+      }
+
+      #namebar{
+        background-color: #07074d;
+        color: rgb(212, 24, 24);
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        padding-top: 60px;
+      }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="../home/home.html" >Home</a>
+    <a href="../bookdetail/bookdetail.html">Book Details</a>
+    <a href="../bookdetail/bookdetail.html">Book Catelog</a>
+    <a href="../FloorPlanV3/index.php">Floor Plan</a>
+    <a href="../inqueris/new inq 2.html">Inquires</a>
+    <a href="#" class="active">Contact Us</a>
+    <a href="../bookstore/bookstore/backend/logout.php">Logout</a>
+
+    
+    <!-- <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div> -->
+</div>
+
+<title>HTML Background Color Example</title>
+  <style>
+    
+    body {
+      background-color: #DCDBD8; 
+    }
+
+</style>
+
+<h2><p style="color:#4F4CF7">Contact us</h2></p>
+
+<h4><p style="color:#322F30">Please fill in this form to send your message</p>
+
+
+<form action="submit_application.php" method="post">
+
+  <h4><p style="color:#BF0A3B">
+
+  <label for="name">Name:</label><br>
+  <textarea type="text" id="fullname" name="name" rows="2" cols="50" required></textarea><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" size = 61 required><br><br>
+
+  <label for="Contact Number">Phone:</label><br>
+  <input type="tel" id="phone" name="phone" size = 61 required><br><br>
+
+  <label for="address">Address:</label><br>
+  <textarea type="text" id="address" name="address" rows="3" cols="50" required></textarea><br><br>
+
+  <label for="Message">Message:</label><br>
+  <textarea id="Message"="cover_letter" rows="4" cols="50" required></textarea><br><br>
+
+  <input type="submit" value="Submit Details">
+</p>
+</form>
+
+</body>
+</html>
